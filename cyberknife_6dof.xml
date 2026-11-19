@@ -141,7 +141,7 @@
         <position name="motor3" joint="joint3" kp="100" ctrlrange="-2.0944 2.0944"/>
         <position name="motor4" joint="joint6" kp="30" ctrlrange="-1.79 1.79"/>
         <position name="motor5" joint="joint4" kp="50" ctrlrange="-3.14159 3.14159"/>
-        <position name="motor6" joint="joint5" kp="50" ctrlrange="-1.5708 1.5708"/>
+        <position name="motor6" joint="joint5" kp="50" ctrlrange="-1.50 1.50"/>
     </actuator>
 
 </mujoco>
