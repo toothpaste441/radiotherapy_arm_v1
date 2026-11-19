@@ -85,41 +85,45 @@
 
                         <!-- J4 -->
                         <body name="joint4_body"
-                              pos="0.041622 0.147211 0.560690">
+                              pos="0.059083 0.168351 0.560350">
 
                             <joint name="joint4" type="hinge"
-                                   axis="1 0 0"
+                                   axis="-0.001567 0.287779 0.957695"
                                    range="-3.14159 3.14159"
                                    limited="true" damping="2"/>
 
-                            <geom type="mesh" mesh="wrist_yaw"
+                            <geom type="mesh" mesh="wrist_roll"
+                                  pos="0.005163 -0.004829 0.016037"
                                   contype="0" conaffinity="0"/>
 
                             <!-- J5 -->
                             <body name="joint5_body"
-                                  pos="0.012729 0.026664 0.036957">
+                                  pos="0 0 0">
 
                                 <joint name="joint5" type="hinge"
-                                       axis="0 1 0"
+                                       axis="-0.758631 0.623616 -0.188633"
                                        range="-1.5708 1.5708"
                                        limited="true" damping="2"/>
 
                                 <geom type="mesh" mesh="wrist_pitch"
+                                      pos="-0.004733 0.005524 0.037297"
+                                      contype="0" conaffinity="0"/>
+
+                                <geom type="mesh" mesh="wrist_yaw"
+                                      pos="-0.017462 -0.021140 0.000340"
                                       contype="0" conaffinity="0"/>
 
                                 <!-- J6 -->
                                 <body name="joint6_body"
-                                      pos="0.009897 -0.010353 -0.021260">
+                                      pos="0.002742 0.019517 0.053494">
 
                                     <joint name="joint6" type="hinge"
-                                           axis="0 0 1"
+                                           axis="-0.639504 -0.768096 0.032608"
                                            range="-3.14159 3.14159"
                                            limited="true" damping="1"/>
 
-                                    <geom type="mesh" mesh="wrist_roll"
-                                          contype="0" conaffinity="0"/>
-
                                     <geom type="mesh" mesh="end_effector"
+                                          pos="0.002421 -0.024346 -0.037456"
                                           contype="0" conaffinity="0"/>
 
                                 </body>
@@ -135,9 +139,9 @@
         <position name="motor1" joint="joint1" kp="100" ctrlrange="-1.5708 1.5708"/>
         <position name="motor2" joint="joint2" kp="100" ctrlrange="-1.5708 1.5708"/>
         <position name="motor3" joint="joint3" kp="100" ctrlrange="-2.0944 2.0944"/>
-        <position name="motor4" joint="joint4" kp="50" ctrlrange="-3.14159 3.14159"/>
-        <position name="motor5" joint="joint5" kp="50" ctrlrange="-1.5708 1.5708"/>
-        <position name="motor6" joint="joint6" kp="30" ctrlrange="-3.14159 3.14159"/>
+        <position name="motor4" joint="joint6" kp="30" ctrlrange="-1.79 1.79"/>
+        <position name="motor5" joint="joint4" kp="50" ctrlrange="-3.14159 3.14159"/>
+        <position name="motor6" joint="joint5" kp="50" ctrlrange="-1.5708 1.5708"/>
     </actuator>
 
 </mujoco>
